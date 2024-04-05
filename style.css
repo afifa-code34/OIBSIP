@@ -1,0 +1,476 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: white;
+}
+/* here div ka id hai islyh apun hash symbol use krte haai , "*"= for full page , "."= for class , "#" = for div */ 
+
+#header{
+
+    width: 100%;
+   
+    height: 95vh;
+    background-image:url(images/header.avif);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+.button-1{
+    margin-left: 15%;
+    margin-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 500;
+    font-style:italic;
+    shape-margin: 0cqi;
+    background-color:peru;
+    border-radius: 15px;
+    cursor: pointer;
+    position:relative;
+    animation:mymove;
+    animation-delay:0s;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+    }
+    @keyframes mymove {
+        from {left: 0px;}
+        to {left: 400px;}
+      }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+    padding-top: 10px;
+    background-color:lightslategray;
+}
+.logo{
+    margin-left: ;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    position: relative;
+    color: #080808;
+}
+nav ul li a::after{
+    content: '';
+    height: 3px;
+    background:peru ;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 120px;
+    margin-left: 200px;
+    font-size: 20px;
+   
+}
+.header-text h1{
+    padding-top:50px;
+    margin-left: 0px;
+    font-size: 50px;
+}
+.header-text h1 span{
+    color:peru;
+}
+
+               /*-----------------------------------------about----------------------------------------*/
+
+
+.img-style1{
+    width: 80%;
+    height:70vh;
+    margin-left: 50px;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+.row{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    text-align: center;
+}
+.col-3{
+    text-align: center;
+    margin-left: 100px;
+}
+#about{
+    padding:20px 0;
+}
+.aboutme{
+    font-size: 40px;
+    font-weight: 600;
+    color:rgb(219, 157, 94);;
+    margin-right: 270px;
+    padding-top: 20px;
+}
+.abt-section{
+    margin-right: 120px;
+    padding-top: 20px;
+    text-align: left;
+}
+.tab-titles{
+    display: flex;
+    text-align:justify;
+    margin:20px 0 40px;
+}
+.tab-links{
+    margin-right: 150px;
+    font-size:18px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+
+}
+.tab-links::after{
+    content: '';
+    width:0;
+    height: 3px;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+    background: peru;
+
+}
+.tab-links.active-link::after{
+    width: 100%;
+
+}
+.tab-contents {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    position:absolute;
+    text-align: left;
+}
+.tab-contents ul li span{
+    color:peru;
+    font-size: 14px;
+}
+.padding{
+    padding:5px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+ /*--------------------------------------services------------------------------*/
+ #services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;               /* to take content azu bazu me*/
+    margin-top: 40%;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 225px;
+    padding-bottom: 20px;
+    color:#080808
+    
+
+}
+.service-title{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 42%;
+    color: rgb(219, 157, 94);
+    font-weight: 500px;
+    font-size:40px;
+    padding: 20px;
+    padding-top: 30px;
+}
+.pad-btm{
+    padding-bottom: 20px;
+}
+.icons{
+    align-items: center;
+    color:slategrey;
+    display: inline-block;
+    margin-left: 60px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.backdrop{
+    
+    background: rgb(117, 61, 4);
+    padding: 40px;
+    font-size:13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+
+
+}
+.service-heading{
+    font-size: 25px;
+    font-weight: 1000;
+}
+.services-list div:hover{
+    background:moccasin;
+    transform: translateY(-10px);
+
+}
+.font-weight{
+    font-weight:800;
+}
+
+/*----------------------------------------------MY WORK -------------------------------------------------*/
+
+.sub-title{
+   
+    margin-top: 1000px;
+    text-align: center;
+    color: rgb(219, 157, 94);
+    font-weight: 500px;
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.mywork{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    position: relative ; 
+
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px; 
+    margin-top: 50px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-left: 70px;
+    padding-bottom: 20px;
+   
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.work img{
+    width: 90%;
+    border-radius: 10px;
+    display: block;
+    height: 55vh;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.8),peru);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.layer a{
+    margin-top:20px ;
+    color:darkred ;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform:scale(1.1) ;
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid blueviolet;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:white;
+    transition: background 0.5s;                           /* transition:: back, height, transform */
+    
+}
+.btn:hover{
+    background:lightslategrey;
+}
+
+/*------------------------------------------Contact--------------------------------------*/
+
+.sub-title-contact{
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(219, 157, 94);
+    font-weight: 500px;
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+
+
+}
+.row1{
+    display: flex;
+    /*justify-content:space-between;*/
+    flex-wrap: wrap;
+    position: absolute;
+    text-align: center;
+}
+.contact-left{
+    flex-basis: 35%;
+    margin-left: 30px;
+
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+    font-size:20px ;
+
+}
+.contact-left p i{
+    color:aqua;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.social-icons{
+    margin-top: 30px;
+
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: aqua;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+.social-icons a:hover{
+    color:purple;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    background:lightslategray;
+
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    border: 0;
+    width: 100%;
+    outline: none;
+    background:lightsteelblue;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    font-size: 18px;
+    
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+.copyright{
+    width: 100%;
+    align-items: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background: lightslategray;
+    height: 5vh;
+    
+}
+.copyright i {
+    color: aqua;
+
+}
+#container6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin-top: 500px;
+    margin-bottom: 10px;
+}
+
+ 
+
